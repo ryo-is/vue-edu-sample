@@ -1,0 +1,9 @@
+.old_content h1 {
+  font-size: 48px;
+}
+
+.old_content p {
+  color: blue;
+  font-size: 24px;
+  text-decoration: underline;
+}
