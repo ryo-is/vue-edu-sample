@@ -1,3 +1,9 @@
 .new_content
   h1 New Content
-  p.text(@click="updateText()") {{ text }}
+  p.text(@click="updateText('fugafuga')") {{ text }}
+  p.text(v-if="text === 'fugafuga'", @click="updateText('hogehoge')") Foooo!!!!!!!
+  button.button(@click="showAndHideText()") ShowText
+  p.basic-text(v-show="textShowFlag") This text is show / hide with button
+  .array-text
+    ul
+      li(v-for="item, index in array", :key="index") {{ item }}
