@@ -2,6 +2,8 @@ import { Component, Vue } from "vue-property-decorator";
 
 @Component({})
 export default class NewContent extends Vue {
+  public text: string = "hogehoge"
+
   public created() {
     console.log("lifecycle Created")
   }
@@ -12,5 +14,9 @@ export default class NewContent extends Vue {
 
   public updated() {
     console.log("lifecycle Updated")
+  }
+
+  public updateText() {
+    this.text = "fugafuga"
   }
 }

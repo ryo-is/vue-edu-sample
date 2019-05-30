@@ -5,8 +5,9 @@
     font-size: 48px;
   }
 
-  p {
+  .text {
     color: $basic-green-color;
+    cursor: pointer;
     font-size: 24px;
     text-decoration: underline;
   }
