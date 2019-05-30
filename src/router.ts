@@ -1,6 +1,5 @@
 import Vue from "vue"
 import Router from "vue-router"
-import Home from "./views/Home.vue"
 import OldContent from "@/views/oldContent/OldContent.vue"
 import NewContent from "@/views/newContent/NewContent.vue"
 
@@ -12,18 +11,13 @@ export default new Router({
   routes: [
     {
       path: "/",
-      name: "home",
-      component: Home,
+      name: "NewContent",
+      component: NewContent,
     },
     {
       path: "/old",
       name: "OldContent",
       component: OldContent,
-    },
-    {
-      path: "/new",
-      name: "NewContent",
-      component: NewContent,
     }
   ],
 })
